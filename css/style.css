@@ -51,8 +51,6 @@ input:focus, select:focus {
   transition: background 1s;
 }
 
-
-
 label {
   line-height: 2.5em;
   }
@@ -156,7 +154,7 @@ footer {
 
 .other_topics {
   margin-top: 0;
-}
+  }
 
 .other_topics_text{
   width: 100%;
@@ -215,7 +213,6 @@ body {
   }
 
 
-
 .contact_info label {
   float: left;
   width:40%;
@@ -239,7 +236,6 @@ body {
   box-sizing: border-box;
   margin-bottom: 1em;
   }
-
 
 
 .zipcode {
@@ -273,20 +269,21 @@ body {
 @media (min-width: 760px)
 {
 
-  .main_content{
-    width: 60%;
-    }
+.main_content{
+  width: 60%;
+  }
 
 .contact_info label {
   width: 30%;
-}
+  }
 
 .contact_info input {
   width: 70%;
-}
+  }
+
 .contact_info select {
   width: 70%;
-}
+  }
 
 .zipcode label  {
   float: left;
@@ -296,7 +293,6 @@ body {
   }
 
 .zipcode  input{
-
   width:25%;
   }
 
