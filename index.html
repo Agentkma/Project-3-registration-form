@@ -1,0 +1,127 @@
+<!DOCTYPE html5>
+<html lang="en-US">
+    <head>
+
+      <meta charset="utf-8" />
+      <title>Project 3 Registration Form</title>
+      <meta name="description" content="registration form">
+      <meta name="keywords" content="registration form">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/normalise.css">
+      <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+      <link rel="stylesheet" media="screen" href="css/style.css">
+
+    </head>
+
+    <body>
+      <div class="header">
+        <header >The Code Review</header>
+      </div>
+
+      <div class="main_content">
+      <div class="heading">
+
+        <h1>Sign up for our newsletter </h1>
+        <p class="heading_intro">Get the latest news on how your code is doing right in your inbox </p>
+
+      </div>
+
+      <div class="contact_info">
+
+
+          <form action="" method="post">
+            <fieldset>
+              <legend class="contact_legend"> Contact Information</legend>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Required     " required name="name" value="" aria-describedby="name-format" required aria-required=”true” pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname"> <br>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Required     " required><br>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="1-111-1111     " required><br>
+
+                <label for="street">Street Address</label>
+                <input type="text" id="street" placeholder="123 Nowhere Dr.     " required><br>
+
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="Anycity     " required><br>
+
+                <label for="state">State</label>
+                <select  id="state" class="state">
+                    <option value="choose state">Choose State </option>
+                    <option value="alabama">Alabama </option>
+                    <option value="arkansas">Arkansas </option>
+                    <option value="alaska">Alaska </option>
+                    <option value="california">California </option>
+                    <option value="delaware">Delaware </option>
+
+                </select><br>
+                  </div>
+                <div class="zipcode">
+
+                <label for="zipcode" >Zip Code</label>
+                <input type="number" id="zipcode" placeholder="12345     " required>
+              </div>
+
+            </fieldset>
+          </form>
+
+
+
+      <div class="newsletter">
+
+        <form action="" method="post">
+            <fieldset>
+                <legend >Newsletter</legend>
+                <p > Select the newsletters you would like to receive </p>
+                  <p class="newsletter_choices">
+                      <input type="checkbox" id="html_news" required>
+                      <label for="html_news">HTML News</label><br>
+
+                      <input type="checkbox" id="css" required>
+                      <label for="css">CSS News</label><br>
+
+                      <input type="checkbox" id="java" required>
+                      <label for="java">Javascript News</label><br>
+
+                      <input type="checkbox" id="ruby" required>
+                      <label for="ruby">Ruby News</label><br>
+
+                      <input type="checkbox" id="python" required>
+                      <label for="python">Python News</label><br>
+                  </p>
+
+
+                  <p> Newsletter format </p>
+
+                  <p>
+                      <input type="radio" id="html" required>
+                      <label for="html">HTML</label><br>
+
+                      <input type="radio" id="text" required>
+                      <label for="text">Plain Text</label><br>
+
+                      <input type="radio" id="pdf" required>
+                      <label for="pdf">PDF File</label><br>
+                  </p>
+              </fieldset>
+            </form>
+          </div>
+          <form action="" method="post">
+            <fieldset>
+              <p> <label class="other_topics" for="other_topics_text">Other topics you'd like to hear about </label></p>
+
+              <input type="text" class="other_topics_text" id="other_topics_text"><br>
+              <img src="pics/newsletter.jpg" class="submit_pic" alt="newsletter-icon">
+              <input type="submit" class="submit_button" value="Sign Up">
+            </fieldset>
+
+        </form>
+
+      <footer>Copyright The Code Review</footer>
+
+
+      </div>
+    </body>

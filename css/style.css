@@ -1,0 +1,303 @@
+/* Mobile First Design */
+
+body {
+  box-sizing: border-box;
+  }
+
+header {
+  color: white;
+  padding-top: .25em;
+  font-size: 1.2em;
+  }
+
+h1, legend {
+  color: black;
+  font-size: 1.25em;
+  }
+
+p {
+  margin-top: 1em;
+  margin-bottom: 0;
+  }
+
+legend {
+    font-weight: bold;
+    }
+
+fieldset {
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+input, select {
+  background-color: lightgray;
+  text-align: right;
+  box-sizing: border-box;
+  }
+
+input[type=checkbox]{
+    cursor: pointer;
+    }
+
+
+select {
+  color:gray;
+  font-style: italic;
+  }
+
+input:focus, select:focus {
+  background-color: white;
+  transition: background 1s;
+}
+
+
+
+label {
+  line-height: 2.5em;
+  }
+
+
+footer {
+  text-align: center;
+  font-style: italic;
+  margin-top: 1em;
+  margin-bottom: 15em;
+  }
+
+
+.header {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em 0;
+  height: 2em;
+  vertical-align: middle;
+  }
+
+
+.main_content {
+    width: 90%;
+    margin: 0 auto;
+    }
+
+.heading {
+  text-align: center;
+  border-bottom: solid 4px black;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  }
+
+.heading_intro {
+  padding-top: 0;
+  margin-top: 0;
+  }
+
+
+.contact_legend {
+  padding-bottom: 1em;
+  }
+
+.contact_info {
+  border-top: solid 2px black;
+  margin-top: 3px;
+  padding-top: 2em;
+  }
+
+
+.contact_info label {
+  line-height: 44px
+  }
+
+.contact_info input {
+    width: 100%;
+    border-radius: .25em .25em .25em .25em;
+    line-height: 2.5em;
+    }
+
+.contact_info select {
+  width: 100%;
+  border-radius: .25em .25em .25em .25em;
+  -webkit-appearance: menulist-button;
+   height: 44px;
+  }
+
+
+.zipcode  label {
+  width: 100%;
+  line-height: 2.5em;
+  display: block;
+      }
+
+.zipcode  input {
+  width: 100%;
+  border-radius: .25em .25em .25em .25em;
+  line-height: 2.5em;
+  display: block;
+  width: 50%;
+  margin-bottom: 2em;
+      }
+
+
+
+.newsletter {
+  margin-top: 1em;
+  border-top: solid 2px black;
+  padding-top: 2em;
+  }
+
+
+.newsletter_choices{
+  display: inline-block;
+  margin-top: 0;
+  }
+
+.other_topics {
+  margin-top: 0;
+}
+
+.other_topics_text{
+  width: 100%;
+  margin: 1em auto 0;
+  height: 8em;
+  border-radius: .25em .25em;
+  }
+
+.submit_pic {
+  height: 5em;
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding-top: 2em
+  }
+
+.submit_button{
+  background-color: teal;
+  width: 100%;
+  height: 3em;
+  margin-top: 1.5em;
+  border-radius: .25em;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  }
+
+
+
+:root {
+  background-color: honeydew;
+  color:gray;
+  }
+
+::-webkit-input-placeholder {
+       font-style: italic;
+     }
+
+/**********   Media Queries / Tablet View********/
+
+@media (min-width: 400px)
+{
+
+body {
+  box-sizing: border-box;
+  }
+
+
+
+.main_content{
+  width: 75%;
+  }
+
+.contact_info p {
+  display: inline-block;
+  }
+
+
+
+.contact_info label {
+  float: left;
+  width:40%;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  }
+
+.contact_info input {
+  float: right;
+  width:60%;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  }
+
+.contact_info select {
+  float: right;
+  width:60%;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  }
+
+
+
+.zipcode {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  }
+
+.zipcode label  {
+  float: left;
+  display: inline-block;
+  width: 40%;
+  box-sizing: border-box;
+  }
+
+.zipcode  input{
+  float:left;
+  display: inline-block;
+  width:33%;
+  }
+
+
+}
+
+
+
+
+
+/**********   Media Queries / Desktop View********/
+
+@media (min-width: 760px)
+{
+
+  .main_content{
+    width: 60%;
+    }
+
+.contact_info label {
+  width: 30%;
+}
+
+.contact_info input {
+  width: 70%;
+}
+.contact_info select {
+  width: 70%;
+}
+
+.zipcode label  {
+  float: left;
+  display: inline-block;
+  width: 30%;
+  box-sizing: border-box;
+  }
+
+.zipcode  input{
+
+  width:25%;
+  }
+
+}
