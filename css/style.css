@@ -22,6 +22,7 @@ p {
 
 legend {
     font-weight: bold;
+    display:block;
     }
 
 fieldset {
@@ -30,10 +31,12 @@ fieldset {
   box-sizing: border-box;
   }
 
-input, select {
-  background-color: lightgray;
+input, select, textarea {
+  color:gray;
+  background-color: gainsboro;
   text-align: right;
   box-sizing: border-box;
+  border-color: transparent;
   }
 
 input[type=checkbox]{
@@ -59,7 +62,7 @@ label {
 footer {
   text-align: center;
   font-style: italic;
-  margin-top: 1em;
+  margin-top: 1.5em;
   margin-bottom: 15em;
   }
 
@@ -93,16 +96,18 @@ footer {
   margin-top: 0;
   }
 
+  .contact_info {
+    width: 100%;
+    border-top: solid 2px black;
+    margin-top: .2em;
+    padding-top: 1em;
+    }
 
 .contact_legend {
-  padding-bottom: 1em;
+  padding-top: .5em;
   }
 
-.contact_info {
-  border-top: solid 2px black;
-  margin-top: 3px;
-  padding-top: 2em;
-  }
+
 
 
 .contact_info label {
@@ -130,42 +135,53 @@ footer {
       }
 
 .zipcode  input {
-  width: 100%;
   border-radius: .25em .25em .25em .25em;
   line-height: 2.5em;
   display: block;
   width: 50%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
       }
 
 
 
 .newsletter {
-  margin-top: 1em;
+  margin: 1em auto 0;
   border-top: solid 2px black;
-  padding-top: 2em;
+  padding-top: 1.75em;
   }
 
 
 .newsletter_choices{
-  display: inline-block;
+  margin: 0 auto 0;
+  }
+
+ .newsletter_format{
+   margin: 1em 0 0 0;
+  }
+
+.format_choices{
   margin-top: 0;
   }
 
 .other_topics {
   margin-top: 0;
+  padding-top: 1em;
+  font-weight: 200;
+  font-size: 1em;
+  color: gray;
   }
 
 .other_topics_text{
   width: 100%;
   margin: 1em auto 0;
-  height: 8em;
+  height: 6em;
   border-radius: .25em .25em;
   }
 
 .submit_pic {
   height: 5em;
   width: 50%;
+  max-width: 250px;
   display: block;
   margin: auto;
   padding-top: 2em
@@ -178,7 +194,7 @@ footer {
   margin-top: 1.5em;
   border-radius: .25em;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: white;
   }
 
@@ -207,6 +223,10 @@ body {
 .main_content{
   width: 75%;
   }
+
+.contact_legend {
+  padding-bottom: 1em;
+}
 
 .contact_info p {
   display: inline-block;
@@ -252,7 +272,7 @@ body {
   }
 
 .zipcode  input{
-  float:left;
+  float:right;
   display: inline-block;
   width:33%;
   }
@@ -293,6 +313,7 @@ body {
 
 .zipcode  input{
   width:25%;
+  float: left;
   }
 
 }
